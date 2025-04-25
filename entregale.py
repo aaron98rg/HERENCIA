@@ -14,9 +14,9 @@ class Productos:
 
 
 class Alamcen:
-    def __init__(self,lista_frescos = [], lista_refigerados = [], lista_congelados = []):
+    def __init__(self,lista_frescos = [], lista_refrigerados = [], lista_congelados = []):
         self.lista_frescos = lista_frescos
-        self.lista_refrigerados = lista_refigerados
+        self.lista_refrigerados = lista_refrigerados
         self.lista_congelados = lista_congelados
 
     def mostrar_productos(self, lista):
@@ -75,7 +75,7 @@ def agregar_producto(tipo, almacen):
 
 
 def main():
-    almacen = Alamcen(lista_frescos=[], lista_congelados= [], lista_refigerados= [])
+    almacen = Alamcen(lista_frescos=[], lista_congelados= [], lista_refrigerados= [])
 
     while True:
         print("\nMenú de gestión de productos:")
